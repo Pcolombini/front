@@ -1,0 +1,134 @@
+<!-- Exercício 5: Crie uma página HTML com um cabeçalho que contenha o título do seu site e um menu de navegação horizontal com três links. Abaixo do cabeçalho, crie uma seção com três colunas de largura igual, cada uma contendo um título, uma imagem e um parágrafo de texto. Utilize CSS para estilizar o cabeçalho, o menu de navegação e as colunas.-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Meu site</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+    </style>
+    <style type="text/css" media="all">
+    
+    html{
+      font-family: 'Rubik', sans-serif;
+      margin: 10px;
+      background-color: #f5f5f5;
+    }
+    
+   /*  .nav{
+     box-shadow: 3px 3px 20px black;
+     display: flex;
+     flex-direction: row;
+     background-color: #fff;
+   }
+   
+   .nav-nome{
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+   }
+   
+   .menu{
+     display: flex;
+     justify-content: flex-end;
+     align-items: flex-end;
+   } */
+   
+     .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 3px 3px 20px black;
+      background-color: #fff;
+    }
+
+    .nav-nome {
+      display: flex;
+      align-items: center;
+    }
+  
+    .menu {
+      margin-left: auto;
+    }
+  
+    ul li, a:link, a:visited{
+      list-style: none;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .conteiner{
+      margin-top: 25px;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      box-shadow: 3px 3px 20px black;
+      background-color: #fff;
+    }
+
+    .colunm{
+      justify-content: space-around;
+      width: 100%;
+      background-color: #fff;
+    }
+      
+    </style>
+  </head>
+  <body>
+    
+    <header>
+      
+      <section class="nav">
+        
+        <section class="nav-nome">
+          
+          <h1>Meu Site</h1>
+          
+        </section>
+        
+        <section>
+          
+          <nav class="menu">
+            
+            <ul>
+              <a href="#"><li>Item 1</li></a>
+              <a href="#"><li>Item 2</li></a>
+              <a href="#"><li>Item 3</li></a>
+            </ul>
+            
+          </nav>
+          
+        </section>
+        
+      </section>
+      
+    </header>
+    
+    <main class="conteiner">
+      
+      <section class="colunm">
+        <h3>Titulo 1</h3>
+        <img src="img.png" alt="imagem de um file de img" />
+        <p>deserunt anim non et ex</p>
+      </section>
+      
+      <section class="colunm">
+        <h3>Titulo 2</h3>
+        <img src="img.png" alt="imagem de um file de img" />        
+        <p>
+          irure dolor veniam cupidatat magna minim
+        </p>
+      </section>
+      
+      <section class="colunm">
+        <h3>Titulo 3</h3>
+        <img src="img.png" alt="imagem de um file de img" />        
+        <p>
+          veniam commodo qui magna
+        </p>
+      </section>
+      
+    </main>
+  </body>
+</html>

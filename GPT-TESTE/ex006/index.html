@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>formulário Contato</title>
+    <style type="text/css" media="all">
+      
+      *{
+        padding: 0px;
+        margin: 0px;
+      }
+      
+      .container 
+      .forms 
+      .contato 
+      .verti{
+        margin: 5px;
+        padding: 5px;
+      }
+      
+      .contato 
+      .verti{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: start;
+      }
+      
+      .verti input[type="text"],
+        input[type="email"]
+        {
+        margin: 3px;
+        width: 7rem;
+        height: 2rem;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .verti button[type="submit"]{
+        margin: 3px;
+        width: 60px;
+        height: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .verti textarea{
+        margin: 3px;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      fieldset, legend{
+        margin: 3px;
+        border: none;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <!--
+      Exercício 6: Crie um formulário de contato em HTML com os seguintes campos: nome, e-mail e mensagem. Estilize o formulário utilizando CSS para alinhar os campos verticalmente e adicionar espaçamento adequado. Adicione um botão de envio no final do formulário.
+      -->
+      <header>
+        <h1>Formulário de Contato</h1>
+      </header>
+      <main>
+        <section class="container">
+          <section class="forms">
+            <form class="contato" action="index.html" method="get" accept-charset="utf-8">
+              <fieldset class="verti">
+                <legend>Dados de Contato</legend>
+                <input type="text" name="nome" id="nome" placeholder="Nome" /><br />
+                <input type="email" name="email" id="email" placeholder="E-mail" /><br />
+                <textarea name="mensagem" id=mensagem rows="8" cols="40" placeholder="Deixe uma mensagem"></textarea><br />
+                <button type="submit">Enviar</button>
+              </fieldset>
+            </form>
+          </section>
+        </section>
+      </main>
+  </body>
+</html>

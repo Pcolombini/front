@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Formulário de Contato</title>
+    <style type="text/css" media="all">
+      
+      *{
+        padding: 0px;
+        margin: 0px;
+      }
+      
+      .container {
+      }
+      
+      .forms {
+      }
+      
+      .contato {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+      
+      .verti {
+        margin: 5px;
+        padding: 5px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+      }
+      
+      .verti input[type="text"],
+      .verti input[type="email"] {
+        margin: 3px;
+        width: 200px;
+        height: 20px;
+      }
+      
+      .verti button[type="submit"] {
+        margin: 3px;
+        width: 60px;
+        height: 20px;
+      }
+      
+      .verti textarea {
+        margin: 3px;
+        width: 200px;
+        height: 100px;
+      }
+      
+      fieldset, legend {
+        margin: 3px;
+        border: none;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Formulário de Contato</h1>
+    </header>
+    <main>
+      <section class="container">
+        <section class="forms">
+          <form class="contato" action="index.html" method="get" accept-charset="utf-8">
+            <fieldset class="verti">
+              <legend>Dados de Contato</legend>
+              <input type="text" name="nome" id="nome" placeholder="Nome" /><br />
+              <input type="email" name="email" id="email" placeholder="E-mail" /><br />
+              <textarea name="mensagem" id="mensagem" rows="8" cols="40" placeholder="Deixe uma mensagem"></textarea><br />
+              <button type="submit">Enviar</button>
+            </fieldset>
+          </form>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!-- Exercício 3: Crie um formulário de contato com os campos "Nome", "E-mail" e "Mensagem". Estilize os campos de entrada de texto para ter uma largura de 200 pixels e um espaçamento interno de 5 pixels. Adicione uma margem de 10 pixels ao redor dos campos. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>formulário</title>
+    <style type="text/css" media="all">
+      
+    .forms{
+      margin: 10px;
+    }
+    
+    /* .forms ::text ::email{
+      width: 200px;
+      padding: 5px;
+    } */
+    
+    /* CORREÇÃO */
+    
+    .forms input[type="text"],
+    .forms input[type="email"] 
+    {
+        width: 200px;
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div>
+          <form action="index.html" method="get" accept-charset="utf-8">
+            <fieldset class="forms">
+              <label for="Nome">Nome</label><br />
+              <input type="text" name="Nome" id="Nome" value="" /><br />
+              <label for="E-mail">E-mail</label><br />
+              <input type="email" name="account" id="account" value="" /> <br />
+              <label for="Mensagem">Mensagem</label><br />
+              <input type="text" name="Mensagem" id="Mensagem" value="" /> <br />
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
