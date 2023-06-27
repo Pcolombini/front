@@ -1,4 +1,4 @@
-# GPT TESTES HTML
+# Exercícios HTML
 
 - Exercício 1:
 Crie uma página HTML com um cabeçalho contendo um título "Minha Página" e um parágrafo de texto abaixo do cabeçalho. Estilize o cabeçalho para ter uma cor de fundo azul e o texto em branco. Estilize o parágrafo para ter uma cor de fundo amarela e o texto em preto.  
