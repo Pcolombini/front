@@ -9,9 +9,6 @@ Crie uma página HTML com uma lista de produtos. Cada produto deve ter uma image
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="">
 		<style type="text/css">
-			html{
-				font-family: ;
-			}
 		</style>
 	</head>
 	<body>
@@ -27,7 +24,7 @@ Crie uma página HTML com uma lista de produtos. Cada produto deve ter uma image
 							<summary>Descrição</summary>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint maxime harum consequuntur, repellendus modi, hic ea dolores incidunt illum! Vel, obcaecati. Sit, tempore, explicabo! Sit assumenda quo sapiente. Dolore.</p>
 							</details><br>
-							<button type="submit">Comprar</button>
+							<button type="submit" onclick="confirma()">Comprar</button>
 						</li>
 					</div>
 					<div class="product">
@@ -38,7 +35,7 @@ Crie uma página HTML com uma lista de produtos. Cada produto deve ter uma image
 							<summary>Descrição</summary>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint maxime harum consequuntur, repellendus modi, hic ea dolores incidunt illum! Vel, obcaecati. Sit, tempore, explicabo! Sit assumenda quo sapiente. Dolore.</p>
 							</details><br>
-							<button type="submit">Comprar</button>
+							<button type="submit" onclick="confirma()">Comprar</button>
 						</li>
 					</div>
 					<div class="product">
@@ -49,11 +46,23 @@ Crie uma página HTML com uma lista de produtos. Cada produto deve ter uma image
 							<summary>Descrição</summary>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sint maxime harum consequuntur, repellendus modi, hic ea dolores incidunt illum! Vel, obcaecati. Sit, tempore, explicabo! Sit assumenda quo sapiente. Dolore.</p>
 							</details><br>
-							<button type="submit">Comprar</button>
+							<button type="submit" onclick="confirma()">Comprar</button>
 						</li>
 					</div>
 				</ul>
 			</section>
 		</aside>
+		<script type="text/javascript">
+			function confirma()
+			{
+			    let confirmar = window.confirm('Deseja Comprar item?');
+
+			    if (confirmar) {
+			        alert('Parabéns, item adquirido');
+			    } else {
+			        alert('Compra cancelada');
+			    }
+			}
+		</script>
 	</body>
 </html>
